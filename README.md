@@ -10,7 +10,7 @@ A Rails plugin which lets your app serve custom content to iPhone and iPod Touch
       responds_to_iphone
     end
 
-Name your views and layouts {name}.iphone.erb. Skip iphonification with <code>skip_before_filter :adjust_format_for_iphone_requests</code>. The <code>responds_to_iphone</code> method takes the same options as <code>before_filter</code>: see [api.rubyonrails.org][api] for more details.
+Name your views and layouts {name}.iphone.erb. Skip iphonification with <code>skip_iphone_response</code>. The <code>responds_to_iphone and skip_iphone_response</code> methods takes the same options as <code>before_filter</code> and <code>skip_before_filter</code>, respectively: see [api.rubyonrails.org][api] for more details.
 
 ## More
 

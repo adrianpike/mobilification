@@ -43,6 +43,18 @@ module IPhoneification
       before_filter :ensure_format_is_iphone, options
     end
     
+    # Skips the iphoneification before_filter set by #responds_to_iphone or #responds_to_iphone!.
+    #
+    # ==== Options
+    # Pass in any options appropriate for +before_filter+.
+    def skip_iphone_response(options = {})
+      if self.filter_chain.any? { |f| f.method == :ensure_format_is_iphone }
+        skip_before_filter :ensure_format_is_iphone, options
+      else
+        skip_before_filter :adjust_format_for_iphone_requests, options
+      end
+    end
+    
   end
   
   # Just some utility methods.
