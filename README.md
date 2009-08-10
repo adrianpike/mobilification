@@ -1,6 +1,6 @@
 # iphoneification
 
-A plugin for Rails which lets your app serve custom content to iPhone and iPod Touch users.
+A Rails plugin which lets your app serve custom content to iPhone and iPod Touch users.
 
 ## Usage
 
