@@ -1,13 +1,7 @@
-Iphoneification
-===============
+# iphoneification
 
 Introduction goes here.
 
+## Copyright
 
-Example
-=======
-
-Example goes here.
-
-
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 James Wilding, released under the MIT license.
