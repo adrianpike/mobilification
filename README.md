@@ -4,15 +4,13 @@ A plugin for Rails which lets your app serve custom content to iPhone and iPod T
 
 ## Usage
 
-  script/plugin install git://github.com/jameswilding/iphoneification.git
+    script/plugin install git://github.com/jameswilding/iphoneification.git
 	
-  class ApplicationController
-    responds_to_iphone
-  end
+    class ApplicationController
+      responds_to_iphone
+    end
 
-Name your views and layouts {name}.iphone.erb. Skip iphonification with <code>skip_before_filter :adjust_format_for_iphone_requests</code>.
-
-<code>responds_to_iphone</code> takes the same options as <code>before_filter</code>: see [api.rubyonrails.org][api] for more details.
+Name your views and layouts {name}.iphone.erb. Skip iphonification with <code>skip_before_filter :adjust_format_for_iphone_requests</code>. The <code>responds_to_iphone</code> method takes the same options as <code>before_filter</code>: see [api.rubyonrails.org][api] for more details.
 
 ## More
 
